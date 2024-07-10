@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --color-radical-red: #FF3666;
+  --color-chinese-black: #121212;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-manatee: #9B9AA8;
+  --color-anti-flash-white: #EFEFF5;
+  --color-gunmetal: #2C2C35;
+  --color-error: #FF5C5C;
+  --color-warning: #FDD048;
+  --color-info: #58B6FF;
+  --color-success: #36D98A;
+  --font-exo-2: 'Exo 2', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --heading-1-font: var(--font-exo-2);
+  --heading-1-size: 58px;
+  --heading-1-weight: 600;
+  --heading-1-line-height: 120%;
+  --heading-2-font: var(--font-exo-2);
+  --heading-2-size: 48px;
+  --heading-2-weight: 600;
+  --heading-2-line-height: 120%;
+  --heading-3-font: var(--font-exo-2);
+  --heading-3-size: 42px;
+  --heading-3-weight: 600;
+  --heading-3-line-height: 120%;
+  --heading-4-font: var(--font-exo-2);
+  --heading-4-size: 36px;
+  --heading-4-weight: 600;
+  --heading-4-line-height: 120%;
+  --heading-5-font: var(--font-exo-2);
+  --heading-5-size: 30px;
+  --heading-5-weight: 600;
+  --heading-5-line-height: 120%;
+  --heading-6-font: var(--font-exo-2);
+  --heading-6-size: 26px;
+  --heading-6-weight: 600;
+  --heading-6-line-height: 120%;
+  --body-1-font: var(--font-inter);
+  --body-1-size: 20px;
+  --body-1-weight: 400;
+  --body-1-line-height: 156%;
+  --body-2-font: var(--font-inter);
+  --body-2-size: 18px;
+  --body-2-weight: 400;
+  --body-2-line-height: 156%;
+  --body-3-font: var(--font-inter);
+  --body-3-size: 16px;
+  --body-3-weight: 400;
+  --body-3-line-height: 156%;
+  --title-font: var(--font-inter);
+  --title-size: 20px;
+  --title-weight: 500;
+  --title-line-height: 156%;
+  --button-1-font: var(--font-inter);
+  --button-1-size: 16px;
+  --button-1-weight: 500;
+}
+
+h1 {
+  font-family: var(--heading-1-font);
+  font-size: var(--heading-1-size);
+  font-weight: var(--heading-1-weight);
+  line-height: var(--heading-1-line-height);
+}
+
+h2 {
+  font-family: var(--heading-2-font);
+  font-size: var(--heading-2-size);
+  font-weight: var(--heading-2-weight);
+  line-height: var(--heading-2-line-height);
+}
+
+h3 {
+  font-family: var(--heading-3-font);
+  font-size: var(--heading-3-size);
+  font-weight: var(--heading-3-weight);
+  line-height: var(--heading-3-line-height);
+}
+
+h4 {
+  font-family: var(--heading-4-font);
+  font-size: var(--heading-4-size);
+  font-weight: var(--heading-4-weight);
+  line-height: var(--heading-4-line-height);
+}
+
+h5 {
+  font-family: var(--heading-5-font);
+  font-size: var(--heading-5-size);
+  font-weight: var(--heading-5-weight);
+  line-height: var(--heading-5-line-height);
+}
+
+h6 {
+  font-family: var(--heading-6-font);
+  font-size: var(--heading-6-size);
+  font-weight: var(--heading-6-weight);
+  line-height: var(--heading-6-line-height);
+}
+
+.body-1 {
+  font-family: var(--body-1-font);
+  font-size: var(--body-1-size);
+  font-weight: var(--body-1-weight);
+  line-height: var(--body-1-line-height);
+}
+
+.body-2 {
+  font-family: var(--body-2-font);
+  font-size: var(--body-2-size);
+  font-weight: var(--body-2-weight);
+  line-height: var(--body-2-line-height);
+}
+
+.body-3 {
+  font-family: var(--body-3-font);
+  font-size: var(--body-3-size);
+  font-weight: var(--body-3-weight);
+  line-height: var(--body-3-line-height);
+}
+
+.title {
+  font-family: var(--title-font);
+  font-size: var(--title-size);
+  font-weight: var(--title-weight);
+  line-height: var(--title-line-height);
+}
+
+.button-1 {
+  font-family: var(--button-1-font);
+  font-size: var(--button-1-size);
+  font-weight: var(--button-1-weight);
+}
+
+.text-radical-red { color: var(--color-radical-red); }
+.text-chinese-black { color: var(--color-chinese-black); }
+.text-black { color: var(--color-black); }
+.text-white { color: var(--color-white); }
+.text-manatee { color: var(--color-manatee); }
+.text-anti-flash-white { color: var(--color-anti-flash-white); }
+.text-gunmetal { color: var(--color-gunmetal); }
+.text-error { color: var(--color-error); }
+.text-warning { color: var(--color-warning); }
+.text-info { color: var(--color-info); }
+.text-success { color: var(--color-success); }
+
+.bg-radical-red { background-color: var(--color-radical-red); }
+.bg-chinese-black { background-color: var(--color-chinese-black); }
+.bg-black { background-color: var(--color-black); }
+.bg-white { background-color: var(--color-white); }
+.bg-manatee { background-color: var(--color-manatee); }
+.bg-anti-flash-white { background-color: var(--color-anti-flash-white); }
+.bg-gunmetal { background-color: var(--color-gunmetal); }
+.bg-error { background-color: var(--color-error); }
+.bg-warning { background-color: var(--color-warning); }
+.bg-info { background-color: var(--color-info); }
+.bg-success { background-color: var(--color-success); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: var(--color-chinese-black);
+  color: var(--color-white);
+}
+
+.hero, .features, .science-in-space {
+  padding: 20px 100px;
+}
+
+a {
+  color: var(--color-radical-red);
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--color-black);
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header .nav a {
+  margin: 0 10px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  /* padding: 100px 50px; */
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.hero-content h1 {
+  font-family: var(--font-exo-2);
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero-buttons .btn-primary {
+  background-color: var(--color-radical-red);
+  color: var(--color-white);
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+
+}
+
+.hero-buttons .btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-radical-red);
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.science-in-space {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.science-in-space h2 {
+  font-family: var(--font-exo-2);
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.science-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.science-card {
+  background-color: var(--color-manatee);
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.features {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.features h2 {
+  font-family: var(--font-exo-2);
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: var(--color-anti-flash-white);
+  color: var(--color-black);
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--color-black);
+}
+
+@media (max-width: 768px) {
+  .science-card, .feature-card {
+    width: 100%;
+  }
+  .hero-content {
+    width: 100%;
+  }
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+}

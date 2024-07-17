@@ -3,12 +3,14 @@ import Hero from './components/Hero';
 import ScienceInSpace from './components/ScienceInSpace';
 import Features from './components/Features';
 import Footer from './components/Footer';
+import Astro from './components/Astro';
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-chinese-black">
       <Header />
       <Hero />
+      <Astro/>
       <ScienceInSpace />
       <Features />
       <Footer />

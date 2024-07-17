@@ -1,9 +1,11 @@
 import React from 'react'
+import AstroThree from './Three/AstroThree'
 
 function Astro() {
     return (
         <>
             <div className="w-full flex items-center justify-center flex-col">
+                <AstroThree/>
                 <div className="text-3xl self-start ml-32">
 
                     Lorem ipsum dolor sit

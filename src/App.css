@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --color-radical-red: #FF3666;
@@ -181,21 +184,6 @@ a {
   text-decoration: none;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: var(--color-black);
-}
-
-.header .logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.header .nav a {
-  margin: 0 10px;
-}
 
 .hero {
   display: flex;
@@ -221,22 +209,13 @@ a {
   margin-bottom: 30px;
 }
 
-.hero-buttons .btn-primary {
-  background-color: var(--color-radical-red);
-  color: var(--color-white);
-  padding: 15px 20px;
-  border: none;
-  cursor: pointer;
-  margin-right: 10px;
-
+.btn-primary {
+  @apply bg-radical-red text-white px-4 py-3 border-none cursor-pointer mr-4;
 }
 
-.hero-buttons .btn-secondary {
-  background-color: var(--color-white);
-  color: var(--color-radical-red);
+.btn-secondary {
+  @apply bg-white text-radical-red px-4 py-3 border-none cursor-pointer;
   padding: 15px 20px;
-  border: none;
-  cursor: pointer;
 }
 
 .science-in-space {

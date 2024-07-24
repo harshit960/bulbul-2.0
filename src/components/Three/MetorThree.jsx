@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from 'react'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 import * as THREE from 'three';
-
+import gsap from 'gsap';
 
 function MetorThree() {
-  
+
     const ref = useRef();
 
     useEffect(() => {
@@ -25,9 +25,10 @@ function MetorThree() {
 
         handleResize();
         window.addEventListener('resize', handleResize);
+
         renderer.setPixelRatio(4)
         ref.current.appendChild(renderer.domElement);
-        
+
         // Add a directional light
         const light = new THREE.DirectionalLight(0xffffff, 1);
         light.position.set(40, 200, 150);
@@ -104,7 +105,7 @@ function MetorThree() {
         // group.scale.set(0.35 * 2.5, 0.35 * 2.5, 0.35 * 2.5)
         group.position.y = 0
         group.position.x = 0
-        
+
 
         const animate = function () {
             requestAnimationFrame(animate);
@@ -115,12 +116,30 @@ function MetorThree() {
             renderer.render(scene, camera);
 
         };
+        const handleMouseMove = (event) => {
+            const { clientX, clientY } = event;
+            const { innerWidth, innerHeight } = window;
+            const x = (clientX / innerWidth) * 2 - 1;
+            const y = -(clientY / innerHeight) * 2 + 1;
+            const targetX = x * 10;
+            const targetY = y * 10;
 
+            // Smoothly move the group towards the target position
+            gsap.to(group.position, {
+                x: targetX,
+                y: targetY,
+                duration: 0.5, // Adjust the duration to control the smoothness of the movement
+                ease: 'power2.out' // Adjust the easing function to control the acceleration/deceleration
+            });
+        };
+
+        window.addEventListener('mousemove', handleMouseMove);
+        
         animate();
 
     }, []);
 
-    return <div className='h-screen w-full absolute -z-10  overflow-hidden opacity-60' ref={ref} />;
+    return <div className='h-[200vh] w-full absolute -z-10  overflow-hidden opacity-60' ref={ref} />;
 }
 
 export default MetorThree
